@@ -1,0 +1,110 @@
+body{
+    padding: 0;
+    margin: 0;
+    height: 100vh;
+    box-sizing: border-box;
+    /* background-color: 	#1B1B1B; */
+    background: linear-gradient(to right top, #1f1c2c, #2a1786);
+    color: aliceblue;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#container{
+    display: flex;
+    /* flex-direction:  ; */
+    justify-content: center;
+    gap:100px;
+    width: 100%;
+    align-items: center;
+}
+
+#con1 > p, .wind-huminity{
+    font-size: 2.5vw;
+}
+
+#con2{
+    margin-top: 2rem;
+}
+
+#temp{
+    font-size: 5vw;
+    /* font-family: ; */
+    font-weight: lighter;
+    margin: 0;
+}
+
+#head{
+    font-size: 3.5vw;
+    text-align: center;
+}
+
+#first{
+    width: 20%;
+}
+
+#con2{
+    display: flex;
+    justify-content: space-between;
+    gap:40px;
+}
+
+img{
+    width: 30vw;
+}
+
+
+@media (max-width: 800px) {
+    #container{
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    #head{
+        margin-bottom: 10vw;
+        font-size: 10vw;
+    }
+
+}
+
+@media (max-width: 700px) {
+
+    #container{
+        align-items: center;
+    }
+
+    #temp{
+        font-size: 8vw;
+    }
+
+    /* #con1{
+        text-align: center;
+    } */
+
+    #con1 > p, .wind-huminity{
+        font-size: 4vw;
+    }
+   
+}
+
+@media (max-width: 500px) {
+    
+    #head{
+        font-size: 3rem;
+        margin-bottom: 3rem;
+    }
+    #temp{
+        font-size: 3rem;
+    }
+    #con1 > p, .wind-huminity{
+        font-size: 1.2rem;
+    }
+    #con2{
+        justify-content: start;
+        flex-direction: column;
+    }
+    #container{
+        flex-direction: column-reverse;
+        gap:30px;
+        width: 100%;
+    }
+
+}
