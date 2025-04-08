@@ -64,7 +64,7 @@ function displayData(data){
     console.log(data);
 }
 
-const Promises = fetch(`http://api.weatherapi.com/v1/current.json?key=2c3ad667adc8465890f123601250804&q=${loc}&aqi=yes`);
+const Promises = fetch(`https://api.weatherapi.com/v1/current.json?key=2c3ad667adc8465890f123601250804&q=${loc}&aqi=yes`);
 
 Promises.then((response)=>{
     if(!response.ok){
